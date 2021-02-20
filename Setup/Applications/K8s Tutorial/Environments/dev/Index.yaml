@@ -1,0 +1,5 @@
+harnessApiVersion: '1.0'
+type: ENVIRONMENT
+configMapYamlByServiceTemplateName: {}
+description: dev environment for tutorial
+environmentType: NON_PROD

@@ -1,0 +1,12 @@
+harnessApiVersion: '1.0'
+type: INFRA_DEFINITION
+cloudProviderType: KUBERNETES_CLUSTER
+deploymentType: KUBERNETES
+infrastructure:
+- type: DIRECT_KUBERNETES
+  cloudProviderName: Kubernetes Cluster
+  namespace: pb-apis-release-1-1-dev
+  releaseName: release-${infra.kubernetes.infraId}
+scopedServices:
+- Users
+- Accounts
