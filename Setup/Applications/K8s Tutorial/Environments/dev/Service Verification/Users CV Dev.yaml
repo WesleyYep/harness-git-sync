@@ -8,7 +8,7 @@ baselineStartMinute: 26897791
 connectorName: Google Cloud Platform
 enabled24x7: true
 hostnameField: resources.labels.pod_name
-isLogsConfiguration: true
+isLogsConfiguration: false
 messageField: textPayload
 numOfOccurrencesForAlert: 1
 query: |-
