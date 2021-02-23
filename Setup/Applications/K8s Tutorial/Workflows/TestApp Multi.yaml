@@ -1,6 +1,7 @@
 harnessApiVersion: '1.0'
 type: MULTI_SERVICE
 concurrencyStrategy: NONE
+description: git edit test
 envName: dev
 failureStrategies:
 - executionScope: WORKFLOW
