@@ -1,5 +1,9 @@
 harnessApiVersion: '1.0'
 type: SERVICE
 artifactType: DOCKER
+configVariables:
+- name: secret_test
+  value: safeharness:-SIgzGI5QvCOPWyP9NARzQ
+  valueType: ENCRYPTED_TEXT
 deploymentType: KUBERNETES
 helmVersion: V2
