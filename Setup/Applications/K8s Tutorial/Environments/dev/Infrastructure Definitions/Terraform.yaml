@@ -1,0 +1,13 @@
+harnessApiVersion: '1.0'
+type: INFRA_DEFINITION
+cloudProviderType: GCP
+deploymentType: KUBERNETES
+infrastructure:
+- type: GCP_KUBERNETES
+  cloudProviderName: Google Cloud Platform
+  expressions:
+    namespace: default
+    releaseName: release-${infra.kubernetes.infraId}
+    clusterName: ${terraform.cluster_name}
+  namespace: default
+provisioner: Terraform Test
