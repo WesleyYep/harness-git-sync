@@ -16,25 +16,4 @@ notificationRules:
   userGroupAsExpression: false
   userGroupIds:
   - XrAFQVcyRDqyeC7k3pjVSw
-preDeploymentSteps:
-- type: TERRAFORM_PROVISION
-  name: Terraform Provision
-  properties:
-    backendConfigs: null
-    delegateTag: ''
-    environmentVariables: null
-    exportPlanToApplyStep: false
-    inheritApprovedPlan: false
-    name: Terraform Provision
-    provisionerName: Terraform Test
-    runPlanOnly: false
-    targets: null
-    tfVarFiles: ''
-    tfVarGitFileConfig: null
-    timeoutMillis: 300000
-    variables:
-    - name: cluster_name
-      value: null
-      valueType: TEXT
-    workspace: ''
 templatized: false
