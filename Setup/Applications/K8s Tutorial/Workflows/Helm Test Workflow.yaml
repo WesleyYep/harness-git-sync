@@ -1,5 +1,5 @@
 harnessApiVersion: '1.0'
-type: CANARY
+type: ROLLING
 concurrencyStrategy: INFRA
 envName: dev
 failureStrategies:
