@@ -18,9 +18,9 @@ notificationRules:
   - XrAFQVcyRDqyeC7k3pjVSw
 phases:
 - type: KUBERNETES
-  computeProviderName: Google Cloud Platform
+  computeProviderName: Kubernetes Cluster
   daemonSet: false
-  infraDefinitionName: Terraform
+  infraDefinitionName: Helm test infra def
   name: Canary
   phaseSteps:
   - type: K8S_PHASE_STEP
@@ -53,9 +53,9 @@ phases:
   statefulSet: false
 rollbackPhases:
 - type: KUBERNETES
-  computeProviderName: Google Cloud Platform
+  computeProviderName: Kubernetes Cluster
   daemonSet: false
-  infraDefinitionName: Terraform
+  infraDefinitionName: Helm test infra def
   name: Rollback Canary
   phaseNameForRollback: Canary
   phaseSteps:
